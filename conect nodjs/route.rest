@@ -1,0 +1,24 @@
+GET http://localhost:3000/students
+###
+
+GET http://localhost:3000/students/637a2fd83d12bf91ae03413e
+###
+
+POST http://localhost:3000/students
+Content-Type: application/json
+
+{
+    "name": "Moshe",
+    "age": 119
+}
+###
+
+DELETE http://localhost:3000/students/638c63e185e22c449c317698
+###
+
+PATCH http://localhost:3000/students/638c63fb85e22c449c31769f
+Content-Type: application/json
+
+{
+    "name": "Mosess was here"
+}
