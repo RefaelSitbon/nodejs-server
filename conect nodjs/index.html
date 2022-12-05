@@ -1,10 +1,112 @@
 <!DOCTYPE html>
-<html>
-<body>
+<html lang="en">
 
-<h1>My First Heading</h1>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
 
-<p>My first paragraph.</p>
+<body style="color: rgb(110, 119, 203); background-color: rgb(32, 37, 137);">
+    <div class="container mt-5">
+        <div class="text-center">
+            <h1 class="display-5 mb-5" align="center">
+                CRUD Table
+            </h1>
+        </div>
+        <div class="col-10 mb-3" 
+        style="font-family:'Courier New', Courier, monospace; 
+        color: aliceblue;">
+            <div>
+                <label for="firstName">First Name:</label><br>
+                <input class="form-control" id="firstName" type="text" placeholder="Enter First Name" size="50">
+            </div>
+            <p></p>
+            <div>
+                <label for="lastName">Last Name:</label><br>
+                <input class="form-control" id="lastName" type="text" placeholder="Enter Last Name" size="50">
+            </div>
+            <p></p>
+            <div>
+                <label for="age">Age:</label><br>
+                <input class="form-control" id="age" type="text" placeholder="Enter Age" size="50">
+            </div>
+
+            <p></p>
+            <div class="flex-parent jc-center" align="center">
+                <button type="submit">add</button>
+            </div>
+            
+            <p></p>
+            <div class="col-10 mt-5">
+                <table>
+                    <thead>
+                        <tr >
+                            <th>First Name:</th>
+                            <th>Last Name:</th>
+                            <th>Age:</th>
+                            <th>Action:</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>Refael</td>
+                            <td>Sitbon</td>
+                            <td>29</td>
+                            <td><button type="submit" style="background-color:yellow">Edit</button>
+                                <button style="background-color:red;">Delete</button></td>
+                        </tr>
+                        <tr>
+                            <td>May</td>
+                            <td>Sohatchevzzki</td>
+                            <td>18</td>
+                            <td><button type="submit" style="background-color:yellow">Edit</button>
+                                <button style="background-color:red;">Delete</button></td>
+                        </tr>
+                        <tr>
+                            <td>May</td>
+                            <td>Sohatchevzzki</td>
+                            <td>19</td>
+                            <td><button type="submit" style="background-color:yellow">Edit</button>
+                                <button style="background-color:red;">Delete</button></td>
+                        </tr>
+                        <tr>
+                            <td>May</td>
+                            <td>Sohatchevzzki</td>
+                            <td>20</td>
+                            <td><button type="submit" style="background-color:yellow">Edit</button>
+                                <button style="background-color:red;">Delete</button></td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <style>
+                    table {
+                      border-collapse: collapse;
+                      width: 100%;
+                      color: rgb(252, 252, 252);
+                    }
+                    
+                    th, td {
+                      text-align: left;
+                      padding: 8px;
+                    }
+                    
+                    tr:nth-child(even) {
+                      background-color: #6b6b6b;
+                    }
+                    
+                    tr:nth-child(odd) {
+                      background-color: #4e4e4e;
+                    }
+                    </style>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    
 
 </body>
 </html>
