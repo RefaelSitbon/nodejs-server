@@ -13,10 +13,15 @@ router.get('/', async(req, res) => {
     // res.send('Hello World')
 })
 
+router.get('/bla', (req, res) => {
+    res.sendFile('/home/refael/infinity/conect nodjs/index.html')
+})
+
 //Getting one
 router.get('/:id', getStudent,(req, res) => {
     res.json(res.student)
 })
+
 
 //Creating one
 router.post('/', async(req, res) => {
