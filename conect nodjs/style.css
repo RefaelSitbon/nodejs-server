@@ -1,0 +1,24 @@
+input.forma {
+    height: 30px;
+    width: 95%;
+    mask-type: text;
+}
+
+table {
+    border-collapse: collapse;
+    width: 95%;
+    color: rgb(252, 252, 252);
+}
+
+th, td {
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #6b6b6b;
+}
+
+tr:nth-child(odd) {
+    background-color: #4e4e4e;
+}

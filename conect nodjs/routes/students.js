@@ -13,8 +13,14 @@ router.get('/', async(req, res) => {
     // res.send('Hello World')
 })
 
+// send html
 router.get('/bla', (req, res) => {
-    res.sendFile('/home/refael/infinity/conect nodjs/index.html')
+    res.sendFile('/home/refael/infinity/test/nodejs-server/conect nodjs/index.html')
+})
+
+// send css that require from html header by <link>
+router.get('/style.css', (req, res) => {
+    res.sendFile('/home/refael/infinity/test/nodejs-server/conect nodjs/style.css')
 })
 
 //Getting one
